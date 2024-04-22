@@ -1,0 +1,81 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-LightGray: hsl(212, 45%, 89%);
+    --clr-GrayishBlue: hsl(220, 15%, 55%);
+    --clr-DarkBlue: hsl(218, 44%, 22%);
+
+    --ff-family: 'Outfit', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-family, 'Arial');
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--clr-DarkBlue, #000);
+    background-color: var(--clr-LightGray, #efefef);
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    width: 99%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+.card {
+    background: var(--clr-white, #fff);
+    padding: 1.3rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 22rem;
+    box-shadow: 0 10px 15px hsla(218, 44%, 22%, 0.1);
+}
+
+.card__image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card__content {
+    padding-top: 1rem;
+}
+
+.card__content p {
+    color: var(--clr-GrayishBlue, #ccc);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+
+}
+
+
+  .attribution { 
+    font-size: 11px;
+     text-align: center; 
+    margin-top: 3rem;
+    }
+
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
